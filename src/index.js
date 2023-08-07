@@ -1,6 +1,6 @@
 //Write your code here
 class API {
-  constructor(url = 'http://api.com/api/hello', method = 'GET') {
+  constructor(url = 'http://catfact.ninja/fact', method = 'GET') {
     this.url = url;
     this.method = method;
     this.#setSecure();
