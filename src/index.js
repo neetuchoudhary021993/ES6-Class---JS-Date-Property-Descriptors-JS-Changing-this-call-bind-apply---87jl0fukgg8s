@@ -1,6 +1,6 @@
 //Write your code here
 class API {
-  constructor(url, method = 'GET') {
+  constructor(url = 'http://api.com/api/hello', method = 'GET') {
     this.url = url;
     this.method = method;
     this.#setSecure();
@@ -21,13 +21,13 @@ class API {
 }
 
 // // Example usage:
-const s = new API('http://api.com/api/hello');
-console.log(s.isSecure()); // false
+// const s = new API('http://api.com/api/hello');
+// console.log(s.isSecure()); // false
 
-s.updateURL('https://api.com/api/hello');
-console.log(s.isSecure()); // true
+// s.updateURL('https://api.com/api/hello');
+// console.log(s.isSecure()); // true
 
-console.log(s.url); // https://api.com/api/hello
+// console.log(s.url); // https://api.com/api/hello
 
 
 //Do not remove this code
